@@ -139,6 +139,13 @@
       });
       // console.log(sortedPeopleByLastName);
 
+      const sortedPeopleByLastName2 = people.sort((a, b) => {
+        let [aLastName, aFirstName] = a.split(", ");
+        let [bLastName, bFirstName] = b.split(", ");
+        return a > b ? 1 : 0;
+      });
+      // console.log(sortedPeopleByLastName);
+
       // 8. Reduce Exercise
       // Sum up the instances of each of these
       const data = [
